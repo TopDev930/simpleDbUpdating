@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Hui (HB User Interface)</title>
+  
+    <link href="css/bootstrap.min.css" rel="stylesheet" /><!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet" />      
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/color-picker.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/js.cookie.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jscolor.js"></script>
+</head>
+<body>
+<div class="web-form">
+<div class="container">
+<form action="action_page.php" id="myForm">
+<div class="row">
+    <h1 class="form-heading">Database Connection</h1>
+    <br/>
+    <div class="col-sm-3">
+        <div class="form-group"><label for="popup1_prefill">Host / IP</label> <input class="form-control" id="popup1_prefill" name="popup1_prefill" type="text" /></div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group"><label for="popup2_prefill">DB Name</label> <input class="form-control" id="popup2_prefill" name="popup2_prefill" type="text" /></div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group"><label for="popup3_prefill">DB Username</label> <input class="form-control" id="popup3_prefill" name="popup3_prefill" type="text" /></div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group"><label for="popup4_prefill">DB Password</label> <input class="form-control" id="popup4_prefill" name="popup4_prefill" type="text" /></div>
+    </div>
+
+<div class="col-sm-12">
+<h2 class="form-heading">Business Contact Info</h2>
+</div>
+
+<div class="col-sm-3">
+<div class="form-group"><strong>Biz Name: </strong><label for="ewc_field1" id="keyword1">ewc_field1</label> <input class="form-control" id="ewc_field1" name="ewc_field[0]" type="text" />
+<input hidden id="keyword_1" name="keyword[0]" type="text" />
+</div>
+</div>
+
+<div class="col-sm-3">
+<div class="form-group"><strong>Phone: </strong><label for="ewc_field2" id="keyword2">ewc_field2</label> <input class="form-control" id="ewc_field2" name="ewc_field[1]" type="text" />
+<input hidden id="keyword_2" name="keyword[1]" type="text" /></div>
+</div>
+
+<div class="col-sm-3">
+<div class="form-group"><strong>Email: </strong><label for="ewc_field3" id="keyword3">ewc_field3</label> <input class="form-control" id="ewc_field3" name="ewc_field[2]" type="text" />
+<input hidden id="keyword_3" name="keyword[2]" type="text" /></div>
+</div>
+
+<div class="col-sm-3">
+<div class="form-group"><strong>CTA Text: </strong><label for="ewc_field4" id="keyword4">ewc_field4</label> <input class="form-control" id="ewc_field4" name="ewc_field[3]" type="text" placeholder="Call Today" />
+<input hidden id="keyword_4" name="keyword[3]" type="text" /></div>
+</div>
+
+<div class="col-sm-3">
+<div class="form-group"><strong>Street: </strong><label for="ewc_field5" id="keyword5">ewc_field5</label> <input class="form-control" id="ewc_field5" name="ewc_field[4]" type="text" />
+<input hidden id="keyword_5" name="keyword[4]" type="text" /></div>
+</div>
+
+<div class="col-sm-3">
+<div class="form-group"><strong>City: </strong><label for="ewc_field6" id="keyword6">ewc_field6</label> <input class="form-control" id="ewc_field6" name="ewc_field[5]" type="text" />
+<input hidden id="keyword_6" name="keyword[5]" type="text" /></div>
+</div>
+
+<div class="col-sm-3">
+<div class="form-group"><strong>State: </strong><label for="ewc_field7" id="keyword7">ewc_field7</label> <input class="form-control" id="ewc_field7" name="ewc_field[6]" type="text" />
+<input hidden id="keyword_7" name="keyword[6]" type="text" /></div>
+</div>
+
+<div class="col-sm-3">
+<div class="form-group"><strong>Zip: </strong><label for="ewc_field8" id="keyword8">ewc_field8</label> <input class="form-control" id="ewc_field8" name="ewc_field[7]" type="text" />
+<input hidden id="keyword_8" name="keyword[7]" type="text" /></div>
+</div>
+
+<div class="col-sm-12">
+<h2 class="form-heading">Text Content</h2>
+</div>
+
+<div class="col-sm-3">
+<div class="form-group"><strong>Banner Title: </strong><label for="ewc_field9" id="keyword9">ewc_field9</label> <input class="form-control" id="ewc_field9" name="ewc_field[8]" type="text" />
+<input hidden id="keyword_9" name="keyword[8]" type="text" />
+</div>
+</div>
+
+<div class="col-sm-3">
+<div class="form-group"><strong>Service-1 Title: </strong><label for="ewc_field10" id="keyword10">ewc_field10</label> <input class="form-control" id="ewc_field10" name="ewc_field[9]" type="text" />
+<input hidden id="keyword_10" name="keyword[9]" type="text" /></div>
+</div>
+
+<div class="col-sm-3">
+<div class="form-group"><strong>Service-2 Title: </strong><label for="ewc_field11" id="keyword11">ewc_field11</label> <input class="form-control" id="ewc_field11" name="ewc_field[10]" type="text" />
+<input hidden id="keyword_11" name="keyword[10]" type="text" /></div>
+</div>
+
+<div class="col-sm-3">
+<div class="form-group"><strong>Service-3 Title: </strong><label for="ewc_field12" id="keyword12">ewc_field12</label> <input class="form-control" id="ewc_field12" name="ewc_field[11]" type="text" />
+<input hidden id="keyword_12" name="keyword[11]" type="text" /></div>
+</div>
+
+<div class="col-sm-3">
+<div class="form-group"><strong>Banner Detail: </strong><label for="ewc_field13" id="keyword13">ewc_field13</label> <input class="form-control" id="ewc_field13" name="ewc_field[12]" type="text" />
+<input hidden id="keyword_13" name="keyword[12]" type="text" /></div>
+</div>
+
+<div class="col-sm-3">
+<div class="form-group"><strong>Service-1 Detail: </strong><label for="ewc_field14" id="keyword14">ewc_field14</label> <input class="form-control" id="ewc_field14" name="ewc_field[13]" type="text" />
+<input hidden id="keyword_14" name="keyword[13]" type="text" /></div>
+</div>
+
+<div class="col-sm-3">
+<div class="form-group"><strong>Service-2 Detail: </strong><label for="ewc_field15" id="keyword15">ewc_field15</label> <input class="form-control" id="ewc_field15" name="ewc_field[14]" type="text" />
+<input hidden id="keyword_15" name="keyword[14]" type="text" /></div>
+</div>
+
+<div class="col-sm-3">
+<div class="form-group"><strong>Service-3 Detail: </strong><label for="ewc_field16" id="keyword16">ewc_field16</label> <input class="form-control" id="ewc_field16" name="ewc_field[15]" type="text" />
+<input hidden id="keyword_16" name="keyword[15]" type="text" /></div>
+</div>
+
+
+<div class="col-sm-12">
+<h2 class="form-heading">Images</h2>
+</div>
+
+
+
+
+
+
+
+<div class="col-sm-4">
+<div class="form-group"><strong>Banner Image: </strong><label for="ewc_field17" id="keyword17">ewc_field17</label> <input class="form-control" id="ewc_field17" name="ewc_field[16]" type="text" placeholder="Full image URL path." />
+<div class="form-group prev-pan">
+    <img src="" class="img-responsive img-thumbnail preview-img " id="keyword_17_img" alt="test image"/>
+</div> 
+
+<input hidden id="keyword_17" name="keyword[16]" type="text" />
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="form-group"><strong>Service-1 Image: </strong><label for="ewc_field18" id="keyword18">ewc_field18</label> <input class="form-control" id="ewc_field18" name="ewc_field[17]" type="text" placeholder="Full image URL path." />
+<div class="form-group prev-pan">
+    <img src="" class="img-responsive img-thumbnail preview-img " id="keyword_18_img" alt="test image"/>
+</div>
+<input hidden id="keyword_18" name="keyword[17]" type="text" /></div>
+</div>
+
+<div class="col-sm-4">
+<div class="form-group"><strong>Service-2 Image: </strong><label for="ewc_field19" id="keyword19">ewc_field19</label> <input class="form-control" id="ewc_field19" name="ewc_field[18]" type="text" placeholder="Full image URL path." />
+<div class="form-group prev-pan">
+    <img src="" class="img-responsive img-thumbnail preview-img " id="keyword_19_img" alt="test image"/>
+</div>
+<input hidden id="keyword_19" name="keyword[18]" type="text" /></div>
+</div>
+
+<div class="col-sm-4">
+<div class="form-group"><strong>Service-3 Image: </strong><label for="ewc_field20" id="keyword20">ewc_field20</label> <input class="form-control" id="ewc_field20" name="ewc_field[19]" type="text" placeholder="Full image URL path." />
+<div class="form-group prev-pan">
+    <img src="" class="img-responsive img-thumbnail preview-img " id="keyword_20_img" alt="test image"/>
+</div>
+<input hidden id="keyword_20" name="keyword[19]" type="text" /></div>
+</div>
+
+<div class="col-sm-4">
+<div class="form-group"><strong>Service-4 Image: </strong><label for="ewc_field21" id="keyword21">ewc_field21</label> <input class="form-control" id="ewc_field21" name="ewc_field[20]" type="text" placeholder="Full image URL path." />
+<div class="form-group prev-pan">
+    <img src="" class="img-responsive img-thumbnail preview-img " id="keyword_21_img" alt="test image"/>
+</div>
+<input hidden id="keyword_21" name="keyword[20]" type="text" /></div>
+</div>
+
+<div class="col-sm-4">
+<div class="form-group"><strong>Service-5 Image: </strong><label for="ewc_field22" id="keyword22">ewc_field22</label> <input class="form-control" id="ewc_field22" name="ewc_field[21]" type="text" placeholder="Full image URL path." />
+<div class="form-group prev-pan">
+    <img src="" class="img-responsive img-thumbnail preview-img " id="keyword_22_img" alt="test image"/>
+</div>
+<input hidden id="keyword_22" name="keyword[21]" type="text" /></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-sm-12">
+    <h2 class="form-heading">Theme Colors</h2></div>
+      
+      <div class="col-sm-4">
+        <div class="form-group"><strong>Background-1: </strong><label for="ewc_field23"  id="keyword23">ewc_field23</label>
+          <div class="input-flex"><input type="text" class="form-control color-input-box jscolor {closable:true,closeText:'Select'}" id="ewc_field23"  onchange="update(this.jscolor, 1)" value="00ff80">
+          <input hidden id="keyword_23"  type="text" disabled/>
+          <span class="color-box" id="color1" style="background: rgb(0, 255, 128);"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="form-group"><strong>Background-2: </strong><label for="ewc_field24"  id="keyword24">ewc_field24</label>
+          <div class="input-flex"><input type="text" class="form-control color-input-box jscolor {closable:true,closeText:'Select'}" id="ewc_field24"  onchange="update(this.jscolor, 2)" value="00ff80">
+          <input hidden id="keyword_24"  type="text" disabled/>
+          <span class="color-box" id="color2" style="background: rgb(0, 255, 128);"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="form-group"><strong>CTA: </strong><label for="ewc_field25"  id="keyword25">ewc_field25</label>
+          <div class="input-flex"><input type="text" class="form-control color-input-box jscolor {closable:true,closeText:'Select'}" id="ewc_field25"  onchange="update(this.jscolor, 3)" value="00ff80">
+          <input hidden id="keyword_25"  type="text" disabled/>
+          <span class="color-box" id="color3" style="background: rgb(0, 255, 128);"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="form-group"><strong>BG-1 Font: </strong><label for="ewc_field26"  id="keyword26">ewc_field26</label>
+          <div class="input-flex"><input type="text" class="form-control color-input-box jscolor {closable:true,closeText:'Select'}" id="ewc_field26"  onchange="update(this.jscolor, 4)" value="0080ff">
+          <input hidden id="keyword_26"  type="text" disabled/>
+          <span class="color-box" id="color4"  style="background: rgb(0, 128, 255);"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="form-group"><strong>BG-2 Font: </strong><label for="ewc_field27"  id="keyword27">ewc_field27</label>
+          <div class="input-flex"><input type="text" class="form-control color-input-box jscolor {closable:true,closeText:'Select'}" id="ewc_field27"  onchange="update(this.jscolor, 5)" value="0080ff">
+          <input hidden id="keyword_27"  type="text" disabled/>
+          <span class="color-box" id="color5" style="background: rgb(0, 128, 255);"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="form-group"><strong>Accent: </strong><label for="ewc_field28"  id="keyword28">ewc_field28</label>
+          <div class="input-flex"><input type="text" class="form-control color-input-box jscolor {closable:true,closeText:'Select'}" id="ewc_field28"  onchange="update(this.jscolor, 6)" value="0080ff">
+          <input hidden id="keyword_28"  type="text" disabled/>
+          <span class="color-box" id="color6" style="background: rgb(0, 128, 255);"></span>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      <div class="col-sm-6" id="pan-1" style="padding: 20px;">
+        <div class="radio col-sm-1">
+            <label><input type="radio" name="optradio" value="temp1" checked></label>
+        </div>
+        <div class="col-sm-11">
+        <div class="panel panel-default ">
+          <div class="panel-heading" style="text-align: center">Site Title</div>
+          <div class="panel-body">
+              <div class="col-sm-4">
+                  <span class="glyphicon glyphicon-certificate icon" style="font-size: 80px;"></span>
+              </div>
+              <div class="col-sm-8">
+                  <small>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</small>
+              </div>
+          </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6" id="pan-2" style="padding: 20px;">
+        <div class="radio col-sm-1">
+            <label><input type="radio" name="optradio" value="temp2"></label>
+        </div>
+        <div class="col-sm-11">
+        <div class="panel panel-default ">
+          <div class="panel-heading" style="text-align: center">Site Title</div>
+          <div class="panel-body">
+              <div class="col-sm-4">
+                  <span class="glyphicon glyphicon-certificate icon" style="font-size: 80px;"></span>
+              </div>
+              <div class="col-sm-8">
+                  <small>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</small>
+              </div>
+          </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="col-sm-12">
+    <input hidden id = "cookie_label" />
+<aside class="submit-btn"><button class="btn btn-default" id="submitData">Submit</button></aside>
+</div>
+</div>
+
+<input hidden id="color_org_1" name="keyword[22]" type="text"/>
+ <input hidden id="color_org_2" name="keyword[23]" type="text"/>
+ <input hidden id="color_org_3" name="keyword[24]" type="text"/>
+ <input hidden id="color_org_4" name="keyword[25]" type="text"/>
+ <input hidden id="color_org_5" name="keyword[26]" type="text"/>
+
+ <input hidden id="color_new_1" name="ewc_field[22]" type="text"/>
+ <input hidden id="color_new_2" name="ewc_field[23]" type="text"/>
+ <input hidden id="color_new_3" name="ewc_field[24]" type="text"/>
+ <input hidden id="color_new_4" name="ewc_field[25]" type="text"/>
+ <input hidden id="color_new_5" name="ewc_field[26]" type="text"/>
+
+
+</form>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-body">
+        <form action="" method="post">
+            <div class="row">
+                    <div class="col-sm-3">
+                    <div class="form-group"><label for="popup1">Host / IP</label> <input class="form-control" id="popup1" name="popup1" type="text" required /></div>
+                    </div>
+                    
+                    <div class="col-sm-3">
+                    <div class="form-group"><label for="popup2">DB Name</label> <input class="form-control" id="popup2" name="popup2" type="text" required /></div>
+                    </div>
+                    
+                    <div class="col-sm-3">
+                    <div class="form-group"><label for="popup3">DB Username</label> <input class="form-control" id="popup3" name="popup3" type="text" required /></div>
+                    </div>
+                    
+                    <div class="col-sm-3">
+                    <div class="form-group"><label for="popup4">DB Password</label> <input class="form-control" id="popup4" name="popup4" type="text" required /></div>
+                    </div>
+                    <br/>
+           </div>
+           <div class="row">
+           <div class="col-sm-12 form-group">
+               <select id = "data-selector" class="form-control">
+                   <option value="" disabled selected>Select Previous DB</option>
+                   
+               </select>
+           </div>     
+           </div>
+           <div class="row">
+           <div class="col-sm-12">
+            
+            <aside class="submit-btn"><button class="btn btn-default" id="saveData">Submit</button></aside>
+            </div>
+            </div>
+
+ <input hidden id="color_org_1" name="keyword[22]" type="text" />
+
+        </form>
+        </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<script>
+
+var temp1_ = [ $("#ewc_field23").val(),
+              $("#ewc_field24").val(),
+              $("#ewc_field25").val(),
+              $("#ewc_field26").val(),
+              $("#ewc_field27").val(),
+              $("#ewc_field28").val()
+              ];
+ var  temp2_ = [ $("#ewc_field23").val(),
+              $("#ewc_field24").val(),
+              $("#ewc_field25").val(),
+              $("#ewc_field26").val(),
+              $("#ewc_field27").val(),
+              $("#ewc_field28").val()
+              ];
+
+  var color_data = [];
+  color_data ['background1'] = $("#keyword23").text();
+  color_data ['background2'] = $("#keyword24").text();
+  color_data ['fore1'] = $("#keyword26").text();
+  color_data ['fore2'] = $("#keyword27").text();
+  color_data ['other1'] = $("#keyword25").text();
+  color_data ['other2'] = $("#keyword28").text();
+
+function update(jscolor, index) {
+    // 'jscolor' instance can be used as a string
+    $('#color' + index).css('background', '#' + jscolor);
+
+
+          var cookie_data = Cookies.get('cookie_data' + $("#cookie_label").val());
+          var data = []
+          if(cookie_data != undefined)
+            data = JSON.parse(cookie_data);
+           Cookies.remove('cookie_data' + $("#cookie_label").val());
+          
+          var temp = $('input[name="optradio"]:checked').val();   
+        if(data != undefined){
+                         
+            data['temp1'] = [
+              $("#ewc_field23").val(),
+              $("#ewc_field24").val(),
+              $("#ewc_field25").val(),
+              $("#ewc_field26").val(),
+              $("#ewc_field27").val(),
+              $("#ewc_field28").val()
+            ];
+
+             data['temp2'] = [
+              $("#ewc_field23").val(),
+              $("#ewc_field24").val(),
+              $("#ewc_field25").val(),
+              $("#ewc_field26").val(),
+              $("#ewc_field27").val(),
+              $("#ewc_field28").val()
+            ];
+
+
+
+            Cookies.set('cookie_data' + $("#cookie_label").val(), JSON.stringify(data), { expires: 7 });
+        }
+
+          temp1_ = [ $("#ewc_field23").val(),
+                      $("#ewc_field24").val(),
+                      $("#ewc_field25").val(),
+                      $("#ewc_field26").val(),
+                      $("#ewc_field27").val(),
+                      $("#ewc_field28").val()
+                      ];
+          temp2_ = [ $("#ewc_field23").val(),
+                      $("#ewc_field24").val(),
+                      $("#ewc_field25").val(),
+                      $("#ewc_field26").val(),
+                      $("#ewc_field27").val(),
+                      $("#ewc_field28").val()
+                      ];
+       
+
+    setTemplate();
+}
+
+
+function setTemplate()
+{
+
+    
+    $("#pan-1 .panel-heading").css("background-color", "#" + $("#ewc_field23").val());
+    $("#pan-1 .panel-heading").css("color", "#" + $("#ewc_field26").val());
+    $("#pan-1 .panel-body").css("color", "#" + $("#ewc_field27").val());
+    $("#pan-1 .panel-body").css("background-color", "#" + $("#ewc_field24").val());
+    $("#pan-1 .panel-body .icon").css("color", "#" + $("#ewc_field25").val());
+     
+     $("#pan-2 .panel-heading").css("background-color", "#" + $("#ewc_field24").val());
+    $("#pan-2 .panel-heading").css("color", "#" + $("#ewc_field27").val());
+    $("#pan-2 .panel-body").css("color", "#" + $("#ewc_field26").val());
+    $("#pan-2 .panel-body").css("background-color", "#" + $("#ewc_field23").val());
+    $("#pan-2 .panel-body .icon").css("color", "#" + $("#ewc_field28").val());
+    
+    
+}
+
+
+var KEYWORD_COUNT = 28;
+
+    $(document).ready(function(){
+        var cookie_index = Cookies.get('cookie_index');
+        var cookie_index_array = [];
+        if(cookie_index != undefined)
+          cookie_index_array = JSON.parse(cookie_index);
+
+
+
+        
+        for(var index = 0; index < cookie_index_array.length; index ++)
+        {
+            $('#data-selector').append("<option value=" + index + ">" + cookie_index_array[index] + "</option>");
+        }
+        
+        $('#myModal').modal('show');
+        
+        $('select').on('change', function() {
+          setDataFromCookie(this.value);
+        });
+        
+        
+        function setDataFromCookie(index)
+        {
+            var temp_cookie_data = Cookies.get('cookie_data' + cookie_index_array[index]);
+            var temp_cookie_data_array = JSON.parse(temp_cookie_data);
+            $("#popup1_prefill").val(temp_cookie_data_array['host']);
+            $("#popup2_prefill").val(temp_cookie_data_array['db_name']);
+            $("#popup3_prefill").val(temp_cookie_data_array['user_name']);
+            $("#popup4_prefill").val(temp_cookie_data_array['db_pass']);
+            
+            $("#popup1").val(temp_cookie_data_array['host']);
+            $("#popup2").val(temp_cookie_data_array['db_name']);
+            $("#popup3").val(temp_cookie_data_array['user_name']);
+            $("#popup4").val(temp_cookie_data_array['db_pass']);
+            
+            color_data['background1'] = temp_cookie_data_array['background1'];
+            color_data['background2'] = temp_cookie_data_array['background2'];
+            color_data['fore1'] = temp_cookie_data_array['fore1'];
+            color_data['fore2'] = temp_cookie_data_array['fore2'];
+            color_data['other1'] = temp_cookie_data_array['other1'];
+            color_data['other2'] = temp_cookie_data_array['other2'];
+            
+            for(var i = 1; i <= KEYWORD_COUNT; i ++)
+            {
+
+                $("#ewc_field" + i).val(temp_cookie_data_array['data' + i]);
+                $("#keyword" + i).text(temp_cookie_data_array['keyword' + i]);
+            }
+            
+            $("#cookie_label").val(temp_cookie_data_array['cookie_label']);
+
+
+            
+            var IMAGE_COUNT = 6;
+            for(var i = 0; i < IMAGE_COUNT ; i ++)
+            {
+                if(temp_cookie_data_array['data' + (i + 17)] != "" && temp_cookie_data_array['data' + (i + 17)] != undefined)
+                {
+                    $("#keyword_" + (i + 17) + "_img").attr('src', temp_cookie_data_array['data' + (i + 17)]);
+                    $("#keyword_" + (i + 17) + "_img").show();
+                }
+                    
+            }
+            
+            $(".jscolor").each(function(i){
+               $(this).css('background-color', "#" +$(this).val()); 
+               $("#color" + (i+1)).css("background-color", "#" +$(this).val());
+            });
+            
+            $("[name='optradio']").val([temp_cookie_data_array['template']]);
+            temp1_ = temp_cookie_data_array['temp1'];
+            temp2_ = temp_cookie_data_array['temp2'];
+            setTemplate();
+            
+        }
+        
+        
+        
+        $("[name = 'optradio']").change(function(){
+          
+
+              for(var i = 0; i < 6; i ++)
+                  {
+                    document.getElementById("ewc_field" + (23 + i)).jscolor.fromString($(this).val() == 'temp1' ? temp1_[i] : temp2_[i]);
+                    $("#color" + (i+1)).css("background-color", "#" +$("#ewc_field" + (23 + i)).val());
+                  }
+              setTemplate();    
+
+        })
+       
+        $("#submitData").click(function(e){
+            e.preventDefault();
+            var cookie_data_array = [];
+
+            
+            var data = {
+                            host:  $("#popup1_prefill").val(),
+                            db_name: $("#popup2_prefill").val(),
+                            user_name: $("#popup3_prefill").val(),
+                            db_pass: $("#popup4_prefill").val(),
+                            template: $('input[name="optradio"]:checked').val()
+
+                        };
+                        
+             
+            for(var index = 1; index <= KEYWORD_COUNT; index ++)
+            {
+                data['data' + index] = $("#ewc_field" + index).val(),
+                data['keyword' + index] =  $("#ewc_field" + index).val() == ""? $("#keyword" + index).text() : $("#ewc_field" + index).val()
+            }
+                        
+           
+
+           //color
+
+            data['temp1'] = temp1_;
+            data['temp2'] = temp2_;
+           //endcolor
+            
+            Cookies.remove('cookie_data' + $("#cookie_label").val());
+                            
+                            
+             if($("[name='optradio']:checked").val() == "temp1") 
+             {
+                  data['background1'] =  $("#ewc_field23").val();
+                  data['background2'] =  $("#ewc_field24").val();
+                  data['fore1']       =  $("#ewc_field26").val();
+                  data['fore2']       =  $("#ewc_field27").val();
+
+             }    
+
+             if($("[name='optradio']:checked").val() == "temp2") 
+             {
+                  data['background2'] =  $("#ewc_field23").val();
+                  data['background1'] =  $("#ewc_field24").val();
+                  data['fore2']       =  $("#ewc_field26").val();
+                  data['fore1']       =  $("#ewc_field27").val();
+
+             }   
+             data['other1']      =  $("#ewc_field25").val();
+             data['other2']      =  $("#ewc_field28").val();
+
+             $("#color_org_1").val(color_data['background1']);    
+             $("#color_org_2").val(color_data['background2']);    
+             $("#color_org_3").val(color_data['fore1']);    
+             $("#color_org_4").val(color_data['fore2']);            
+                        
+             $("#color_new_1").val(data['background1']);    
+             $("#color_new_2").val(data['background2']);    
+             $("#color_new_3").val(data['fore1']);    
+             $("#color_new_4").val(data['fore2']);
+
+            if($("[name='optradio']:checked").val() == "temp1") 
+            {
+              $("#color_org_5").val(color_data['other1']); 
+              $("#color_new_5").val($("#ewc_field25").val()); 
+            } 
+            if($("[name='optradio']:checked").val() == "temp2") 
+            {
+              $("#color_org_5").val(color_data['other2']); 
+              $("#color_new_5").val($("#ewc_field28").val()); 
+            }               
+                            
+                          
+                            
+                            
+                            
+                            
+                            
+                            
+            function addZero(i) {
+                if (i < 10) {
+                i = "0" + i;
+                }
+                return i;
+            }
+
+               var cookie_index = Cookies.get('cookie_index');
+            var cookie_index_array = [];
+
+              if(cookie_index != undefined)
+          cookie_index_array = JSON.parse(cookie_index);
+        
+          cookie_index_array = cookie_data_array.filter(function(elem){
+                           return elem != $("#cookie_label").val(); 
+                        });
+
+
+            var currentdate = new Date();
+                data.cookie_label = $("#popup2_prefill").val() + " " + (currentdate.getMonth()+1) + "/" + (currentdate.getDate()) + " " + currentdate.getHours() + ":"  
+                + addZero(currentdate.getMinutes());
+                $("#cookie_label").val(data.cookie_label);
+                
+           cookie_index_array .push($("#cookie_label").val())  ;
+            Cookies.set('cookie_index', JSON.stringify(cookie_index_array), { expires: 7 })
+ 
+
+
+
+            Cookies.set('cookie_data' + $("#cookie_label").val(), JSON.stringify(data), { expires: 7 })
+
+
+
+
+
+
+            for(var index = 1; index <= KEYWORD_COUNT; index ++)
+            {
+                $("#keyword_" + index).val($("#keyword" + index).text());
+            }
+            
+            
+            
+            // debugger;
+            $("#myForm").submit();
+                            
+        });
+        
+        $("#saveData").click(function(e){
+            e.preventDefault();
+            if($("#popup1").val() == ""){
+                alert("Please enter Host / IP.");
+                return;
+            }
+            if($("#popup2").val() == ""){
+                alert("Please enter DB Name.");
+                return;
+            }
+            if($("#popup3").val() == ""){
+                alert("Please enter DB Username.");
+                return;
+            }
+            if($("#popup4").val() == ""){
+                alert("Please enter DB Password.");
+                return;
+            }
+            
+            $.ajax({
+                    type: "get",
+                    dataType: "json",
+                    url: 'action_db_validate.php',
+                    data:{
+                        host : $("#popup1").val(),
+                        db_name : $("#popup2").val(),
+                        user_name : $("#popup3").val(),
+                        db_pass : $("#popup4").val()
+                        
+                    },
+                    success: function(response){
+                        if(response.status == "success")
+                        {
+                        
+                            $("#popup1_prefill").val( $("#popup1").val() );
+                            $("#popup2_prefill").val( $("#popup2").val() );
+                            $("#popup3_prefill").val( $("#popup3").val() );
+                            $("#popup4_prefill").val( $("#popup4").val() );
+                            
+                            $("#myModal").modal('hide');
+                            
+                            
+                        }
+                        else
+                        {
+                            alert("Datbase connection failed. Check DB access credentials.");
+                        }
+                        
+                    },
+                    error: function(var1, var2, var3){
+                        debugger;
+                    }
+            });
+            return;
+            
+        });
+        
+        
+    
+    });
+    setTemplate();
+    
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+/*Basic CSS*/
+body{ margin:0px; padding:0px; font-family: 'Lato', sans-serif; font-size: 15px; color: #000000;}
+header,footer,section,nav,article,aside{ margin:0px; padding:0px;}
+
+
+.web-form  form{border: 5px solid #ccc; padding: 30px; border-radius: 10px; margin: 50px 0px;}
+.web-form .form-heading{text-align: center; font-size: 25px; margin-bottom: 20px; text-transform: capitalize; font-weight: 700;}
+.web-form .form-control{ border-radius: 3px !important; border: 1px solid #ccc; font-size: 15px; height:40px; color: #000000;}
+.web-form .form-control:focus{ box-shadow: none !important;}
+.web-form  .submit-btn{text-align: center;}
+.web-form  .submit-btn .btn {padding: 10px 45px; font-size: 16px; background: none; border: 2px solid #ccc !important; font-weight: 600; text-transform: capitalize; outline: 0px;}
+.web-form  .submit-btn .btn:hover,
+.web-form  .submit-btn .btn:focus,
+.web-form  .submit-btn .btn:active{background: #ccc;}
+.input-flex{display: flex;}
+.color-box{width: 50px; height: 40px; display: block; background: #cb3414; 
+    margin-left: 10px; border-radius: 4px;}
+.web-form .prev-pan{
+    text-align: center;
+}
+.web-form .preview-img{
+    width: 100px;
+    max-height: 100px;
+    margin: 10px;
+    display: none;
+}

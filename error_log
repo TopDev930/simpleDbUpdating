@@ -1,0 +1,36 @@
+[21-Apr-2020 16:07:29 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/ewchui/public_html/action_page.php on line 44
+[21-Apr-2020 16:07:29 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/ewchui/public_html/action_page.php on line 46
+[21-Apr-2020 16:07:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/ewchui/public_html/action_page.php:50
+Stack trace:
+#0 /home/ewchui/public_html/action_page.php(164): replace_text_db('ewc_field18', 'https://upload....')
+#1 {main}
+  thrown in /home/ewchui/public_html/action_page.php on line 50
+[21-Apr-2020 16:19:32 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/ewchui/public_html/action_page.php on line 44
+[21-Apr-2020 16:19:32 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/ewchui/public_html/action_page.php on line 46
+[21-Apr-2020 16:19:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/ewchui/public_html/action_page.php:50
+Stack trace:
+#0 /home/ewchui/public_html/action_page.php(164): replace_text_db('#0118fb', '#281e11')
+#1 {main}
+  thrown in /home/ewchui/public_html/action_page.php on line 50
+[21-Apr-2020 17:05:20 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/ewchui/public_html/action_page.php on line 44
+[21-Apr-2020 17:05:20 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/ewchui/public_html/action_page.php on line 46
+[21-Apr-2020 17:05:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/ewchui/public_html/action_page.php:50
+Stack trace:
+#0 /home/ewchui/public_html/action_page.php(164): replace_text_db('#281e11', '7DFF83')
+#1 {main}
+  thrown in /home/ewchui/public_html/action_page.php on line 50
+[21-Apr-2020 17:49:12 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/ewchui/public_html/action_page.php on line 44
+[21-Apr-2020 17:49:12 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/ewchui/public_html/action_page.php on line 46
+[21-Apr-2020 17:49:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/ewchui/public_html/action_page.php:50
+Stack trace:
+#0 /home/ewchui/public_html/action_page.php(164): replace_text_db('ewc_field23', '123456')
+#1 {main}
+  thrown in /home/ewchui/public_html/action_page.php on line 50
+[21-Apr-2020 21:51:00 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/ewchui/public_html/action_page.php on line 44
+[21-Apr-2020 21:51:00 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/ewchui/public_html/action_page.php on line 46
+[21-Apr-2020 21:51:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/ewchui/public_html/action_page.php:50
+Stack trace:
+#0 /home/ewchui/public_html/action_page.php(164): replace_text_db('ewc_field23', '00FF80')
+#1 {main}
+  thrown in /home/ewchui/public_html/action_page.php on line 50
+[22-Apr-2020 00:05:47 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'ewcstarterclone_15'@'104.152.110.64' to database 'erclone_15' in /home/ewchui/public_html/action_db_validate.php on line 8
